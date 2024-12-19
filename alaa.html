@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ways of donation </title>
+    <style>
+    body{
+        background-image: url(abstrat.jpg);
+        background-size: cover;
+        
+        background-position: bottom center; /* تجعل الصورة تبدأ من أسفل الصفحة */
+        background-attachment: fixed; /* تجعل الصورة ثابتة أثناء التمرير */
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+        /* From Uiverse.io by alexruix */ 
+        .card {
+            width: 190px;
+            height: 254px;
+            border-radius: 20px;
+            background: #f5f5f5;
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+            margin: 20px;
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            gap: .5em;
+            display: grid;
+            place-content: center;
+        }
+
+        .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #d81f8b;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+
+        .text-body {
+            color: rgb(12, 12, 12);
+        }
+
+        /*Text*/
+        .text-title {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /*Hover*/
+        .card:hover {
+            border-color: #e23e98;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2em;
+            color: #a60c61;
+            font: italic;
+        }
+        .card img {
+            width: 100%; /* Makes the image fill the width of the card */
+            height: 85px; /* Adjust the height as needed */
+            border-radius: 15px; /* Optional: Adds border radius to the image */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Ways of donation </h1>
+
+    <div class="cards-container">
+        <!-- Vodafone Cash Card -->
+        <div class="card">
+            <img src="vodafone.jpeg" alt="Vodafone Cash">
+            <div class="card-details">
+                <p class="text-title">Vodafone cash</p>
+                <p class="text-body">donate by using vofadone cash easily</p>
+            </div>
+            <button class="card-button"><a href="vodafone.html">donate</a></button>
+        </div>
+
+        <!-- InstaPay Card -->
+        <div class="card">
+            <img src="instapay.jpeg" alt="instapay">
+            <div class="card-details">
+                <p class="text-title">     InstaPay</p>
+                <p class="text-body">use InstaPay for donation</p>
+            </div>
+            <button class="card-button"><a href="instapay.html">donate</a></button>
+        </div>
+
+        <!-- Bank Card -->
+        <div class="card">
+            <img src="visa.jpeg" alt="banktransfer">
+            <div class="card-details">
+                <p class="text-title">Bank Transfer</p>
+                <p class="text-body">donate by using bank transfer</p>
+            </div>
+            <button class="card-button"><a href="bank.html">donate</a></button>
+        </div>
+    </div>
+
+</body>
+</html>
